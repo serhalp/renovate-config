@@ -6,8 +6,10 @@
     ":prHourlyLimitNone",
     ":semanticCommits",
     ":automergeMinor",
-    ":automergePatch"
+    ":automergePatch",
+    "helpers:pinGitHubActionDigestsToSemver"
   ],
+  "minimumReleaseAge": "1 day",
   "packageRules": [
     {
       "description": "For 0.x versions, only automerge patch updates (minor can be breaking)",
