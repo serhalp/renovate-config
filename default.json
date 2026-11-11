@@ -5,6 +5,7 @@
     ":prConcurrentLimitNone",
     ":prHourlyLimitNone",
     ":semanticCommits",
+    ":maintainLockFilesWeekly",
     ":automergeMinor",
     ":automergePatch",
     "helpers:pinGitHubActionDigestsToSemver"
@@ -22,6 +23,7 @@
       "description": "Disable automerge for 0.x minor/major updates",
       "matchCurrentVersion": "0.x",
       "matchUpdateTypes": ["minor", "major"],
+      "matchPackageNames": ["!oxfmt"],
       "automerge": false
     }
   ]
